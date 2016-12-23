@@ -1,0 +1,21 @@
+{
+  "name": "dsae",
+  "description": "A Dictionary of South African English",
+  "main": "index.js",
+  "authors": [
+    "AK Systems inc"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3.1.1"
+  }
+}

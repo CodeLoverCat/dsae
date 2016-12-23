@@ -1,0 +1,12 @@
+{
+  "name": "dsae",
+  "version": "1.0.0",
+  "description": "A Dictionary of South African English",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AK Systems inc",
+  "license": "ISC",
+  "devDependencies": {}
+}
