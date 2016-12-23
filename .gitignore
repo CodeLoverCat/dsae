@@ -1,1 +1,3 @@
 /bower_components
+.gitignore
+readme.md
