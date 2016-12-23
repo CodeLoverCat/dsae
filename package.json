@@ -8,5 +8,7 @@
   },
   "author": "AK Systems inc",
   "license": "ISC",
-  "devDependencies": {}
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
