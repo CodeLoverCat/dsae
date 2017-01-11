@@ -26,14 +26,14 @@ var path = {
     src: { // development
         html: 'src/*.html',
         js: 'src/js/*.js',
-        sass: 'src/scss/*.scss',
+        sass: 'src/styles/scss/*.scss',
         image: 'src/images/**/*.*',
         font: 'src/fonts/**/*.*'
     },
     watch: {
         html: 'src/**/*.html',
         js: 'src/js/**/*.js',
-        sass: 'src/scss/**/*.*',
+        sass: 'src/styles/scss/**/*.*',
         image: 'src/images/**/*.*',
         font: 'src/fonts/**/*.*'
     }
@@ -49,7 +49,7 @@ var config = {
     },
     tunnel: false,
     host: 'localhost',
-    port: 9000,
+    port: 1414,
     logPrefix: "Frontend",
     watchTask: true
 };
@@ -82,9 +82,13 @@ gulp.task('js', function () {
         .pipe(reload({stream: true}));
 });
 
-gulp.task('pre-js', function () {
+gulp.task('pre-js', ['js'], function () {
     var scripts = [
-        //Bower and Other JS file will be here.
+        'bower_components/jquery/dist/jquery.min.js',
+        'bower_components/bootstrap/dist/js/bootstrap.min.js',
+        'bower_components/typeahead.js/dist/typeahead.jquery.min.js',
+        'bower_components/matchHeight/dist/jquery.matchHeight-min.js',
+        'build/js/app.js'
     ];
 
     var stream = gulp
@@ -103,21 +107,28 @@ gulp.task('sass', function () {
         .pipe(sassGlob())
         //.pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(autoprefix({
+            browsers: ['last 30 versions', '> 1%', 'ie 8', 'ie 9'],
+            cascade: true
+        }))
         //.pipe(sourcemaps.write('./maps'))
         .pipe(gulp.dest(path.build.css))
-        .pipe(reload({stream: true}))
+        .pipe(browserSync.reload({stream: true}))
 });
 
-gulp.task('css', function () {
+gulp.task('css', ['sass'], function () {
     var styles = [
-        //Bower and Other CSS file will be here.
+        'bower_components/bootstrap/dist/css/bootstrap.min.css',
+        'src/styles/lib/font-awesome/font-awesome.min.css',
+        'src/styles/lib/themify-icons/themify-icons.css',
+        'build/css/main.css'
     ];
 
     var stream = gulp
         .src(styles)
         .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(concat('main.css'))
-        .pipe(reload({stream: true}))
+        .pipe(concat('lib-styles.css'))
+        .pipe(browserSync.reload({stream: true}))
     
     return stream
         .pipe(gulp.dest(path.build.css))
@@ -172,8 +183,7 @@ gulp.task('watch', function(){
     gulp.watch(path.watch.html, ['html']);
     gulp.watch(path.watch.js, ['js']);
     gulp.watch(path.watch.js, ['pre-js']);
-    gulp.watch(path.watch.sass, ['sass']);
-    gulp.watch(path.watch.sass, ['css']);
+    gulp.watch(path.watch.sass, ['css']);    
     gulp.watch(path.watch.image, ['image']);
     gulp.watch(path.watch.font, ['font']);
 });

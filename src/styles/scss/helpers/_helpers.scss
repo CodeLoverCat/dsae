@@ -1,0 +1,9 @@
+body {
+    font-family: $font-default;
+}
+.text-gray {color: $grey;}
+.vertical-middle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}

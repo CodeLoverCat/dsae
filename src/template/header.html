@@ -1,50 +1,144 @@
-<div class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="javascript:void(0)">Brand</a>
-    </div>
-    <div class="navbar-collapse collapse navbar-responsive-collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="javascript:void(0)">Active</a></li>
-        <li><a href="javascript:void(0)">Link</a></li>
-        <li class="dropdown">
-          <a href="http://fezvrasta.github.io/bootstrap-material-design/bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown
-            <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="javascript:void(0)">Action</a></li>
-            <li><a href="javascript:void(0)">Another action</a></li>
-            <li><a href="javascript:void(0)">Something else here</a></li>
-            <li class="divider"></li>
-            <li class="dropdown-header">Dropdown header</li>
-            <li><a href="javascript:void(0)">Separated link</a></li>
-            <li><a href="javascript:void(0)">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control col-sm-8" placeholder="Search">
+<header class="page-main-header desktop-only-header">
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <span class="text-gray">Welcome to Dummy! Your own clothing store!</span>
+                </div>
+                <div class="col-sm-6 text-right">
+                    <ul class="tools">
+                        <li>
+                            <a href="#">
+                                <span class="hidden-md">My Account</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="hidden-md">Wishlist</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="hidden-md">Login</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="hidden-md">Register</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="javascript:void(0)">Link</a></li>
-        <li class="dropdown">
-          <a href="http://fezvrasta.github.io/bootstrap-material-design/bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown
-            <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="javascript:void(0)">Action</a></li>
-            <li><a href="javascript:void(0)">Another action</a></li>
-            <li><a href="javascript:void(0)">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="javascript:void(0)">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
     </div>
-  </div>
-</div>
+    <div class="navbar">
+        <div class="container">
+            <div class="navbar-inner">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="index.html" class="logo"><img src="images/logo.png" alt="logo" /></a>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="search-area">
+                            <form id="searchForm" method="post">
+                                <fieldset>
+                                    <div class="search-section">
+                                        <div id="search-input-head">
+                                            <i class="fa fa-search"></i>
+                                            <input class="typeahead form-control" type="text" placeholder="Search here...">
+                                        </div>
+                                        <button class="btn btn-default submitButton" type="submit">Search</button>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="header-tools pull-right">
+                            <div class="cart-container">
+                                <a href="#" class="header-tools-link cart-link">
+                                    <div class="cart-icon-counter">
+                                        <i class="ti-shopping-cart cart-icon"></i>
+                                        <span class="counter">24</span>
+                                    </div>
+                                    <div class="cart-datail">
+                                        <span class="title">Shopping Cart</span>
+                                        <span class="total">Total: <span class="total-amount">$1200</span></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mega-menu-container">
+        <div class="container">
+            <div class="mega-menu-inner">
+                <ul class="nav nav-justified">
+                    <li class="lvl-1">
+                        <a href="#">Man</a>
+                        <div class="mega-menu-wrap">
+                            <div class="mega-menu">
+                                <div class="row">
+                                    <div class="col-md-3 matchHeightItem">
+                                        <div class="title">Outerwear</div>
+                                        <ul>
+                                            <li><a href="#">Running</a></li>
+                                            <li><a href="#">Lifestyle</a></li>
+                                            <li><a href="#">Training</a></li>
+                                            <li><a href="#">Walking</a></li>
+                                            <li><a href="#">Baseball</a></li>
+                                            <li><a href="#">Hiking &amp; Trail</a></li>
+                                            <li><a href="#">Soccer</a></li>
+                                            <li><a href="#">Tennis</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 matchHeightItem">
+                                        <div class="title">Clothing</div>
+                                        <ul>
+                                            <li><a href="#">Short Sleeve &amp; Sleeveless Shirts</a></li>
+                                            <li><a href="#">Long Sleeve Shirts</a></li>
+                                            <li><a href="#">Jackets &amp; Hoodies</a></li>
+                                            <li><a href="#">Pants</a></li>
+                                            <li><a href="#">Socks</a></li>
+                                            <li><a href="#">Accessories and Gear</a></li>
+                                            <li><a href="#">Recently Reduced Clothing</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6 matchHeightItem">
+                                        <div class="title">New Arrivals</div>
+                                        <div class="featured-area row">
+                                            <div class="feature-1 col-md-6">
+                                                <a href="#" class="fear-image">
+                                                    <img class="img-thumbnail" src="http://the8guild.com/themes/html/b-shop/b-shop/img/mega-menu/01.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="feature-2 col-md-6">
+                                                <a href="#" class="fear-image">
+                                                    <img class="img-thumbnail" src="http://the8guild.com/themes/html/b-shop/b-shop/img/mega-menu/01.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="lvl-1"><a href="#">Woman</a></li>
+                    <li class="lvl-1"><a href="#">Kids</a></li>
+                    <li class="lvl-1"><a href="#">Accessories</a></li>
+                    <li class="lvl-1"><a href="#">Footwear</a></li>
+                    <li class="lvl-1"><a href="#">Winterwear</a></li>
+                    <li class="lvl-1"><a href="#">Traditionalwear</a></li>
+                    <li class="lvl-1"><a href="#">Brands</a></li>
+                    <li class="lvl-1"><a href="#">Sports</a></li>
+                    <li class="lvl-1"><a href="#">Sale</a></li>
+                    <li class="lvl-1"><a class="blinking-text" href="#">OfferZone</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
