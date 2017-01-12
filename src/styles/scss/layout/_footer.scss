@@ -1,0 +1,83 @@
+.footer-section {
+    background: $extralightgrey;
+    padding-top: 25px;
+    .widget {
+        margin-bottom: 20px;
+        .title {
+            display: inline-block;
+            font-size: 18px;
+            letter-spacing: 0.5px;
+            margin-bottom: 10px;
+        }
+        .desc {
+            font-size: 13px;
+            color: $grey;
+        }
+        .cs-boxes {
+            .box {
+                float: left;
+                margin-right: 20px;
+                .cs-btn {
+                    height: 50px;
+                    width: 50px;
+                    background: #ccc;
+                    display: block;
+                    text-align: center;
+                    line-height: 50px;
+                    font-size: 30px;
+                    border-radius: 4px;
+                    box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3);
+                    text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+                    color: #1a1a1a;
+                }
+                span {
+                    font-size: 82%;
+                }
+            }
+        }
+        .footer-social-btn {
+            height: 40px;
+            width: 40px;
+            color: $darkgrey;
+            display: inline-block;
+            line-height: 40px;
+            border: 1px solid $darkgrey;
+            font-size: 18px;
+            border-radius: 30px;
+            margin: 0 5px;
+            transition: all 0.5s;
+            &:hover {
+                background: $darkgrey;
+                color: $white;
+            }
+        }
+        .pa-card {
+            img {
+                width:50px;
+                margin: 0 5px;
+            }
+        }
+        ul {
+            padding-left: 15px;
+            li {
+                list-style: square;
+                padding-bottom: 5px;
+                a {
+                    color: $grey;
+                    text-decoration: none;
+                    transition: all 0.5s;
+                    &:hover {
+                        color: $darkgrey;
+                    }
+                }
+            }
+        }
+    }
+    .copyright {
+        background: $darkgrey;
+        color: $lightgrey;
+        font-size: 12px;
+        padding: 10px;
+        margin: 25px 0 0;
+    }
+}
