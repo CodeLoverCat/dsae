@@ -11,7 +11,8 @@ var gulp = require('gulp'),
     imageop = require('gulp-image-optimization'),
     browserSync = require("browser-sync"),
     reload = browserSync.reload,
-    cleanCSS = require('gulp-clean-css');
+    cleanCSS = require('gulp-clean-css'),
+    rename = require('gulp-rename');
 
 
 
@@ -156,7 +157,8 @@ gulp.task('image', function () {
 =====================================================*/
 gulp.task('font', function() {
     return gulp.src(path.src.font)
-		.pipe(gulp.dest(path.build.font))
+            .pipe(rename({dirname: ''}))
+            .pipe(gulp.dest(path.build.font));
 });
 
 
