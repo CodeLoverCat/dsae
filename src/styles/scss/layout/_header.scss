@@ -1,4 +1,8 @@
 .page-main-header {
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
     .top-bar {
         background-color: $extralightgrey;
         padding: 10px 0;
@@ -14,7 +18,7 @@
             }
         }
     }
-    .navbar {
+    .navbar.header-main-area {
         margin-bottom: 0;
         padding: 20px 0;
         border: 0 none;
@@ -128,6 +132,11 @@
                     }
                 }
             }
+        }
+    }
+    &.fixed-up {
+        .mega-menu-container {
+            background: rgba(0,0,0,0.75);
         }
     }
     .mega-menu-container {
