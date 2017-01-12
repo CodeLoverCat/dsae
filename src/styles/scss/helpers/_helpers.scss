@@ -1,9 +1,25 @@
 body {
-    font-family: $font-default;
+    font: $font-default;
+    color: $darkgrey;
 }
+
+a {
+    transition: all 0.5s;
+}
+
 .text-gray {color: $grey;}
-.vertical-middle {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+
+ul.square-listed {
+    padding-left: 15px;
+    li {
+        list-style: square;
+        padding: 0 0 10px;
+    }
+}
+
+.card-box-layout {
+    border-radius: 4px;
+    background-color: #FFF;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.06);
+    border: 1px solid $lightgrey;
 }

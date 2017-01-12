@@ -1,0 +1,13 @@
+button {
+    
+}
+.btn {
+    border-radius: 0;
+    &:focus,
+    &:active,
+    &:focus:active {
+        box-shadow: none;
+        outline: none;
+        outline-offset: 0;
+    }
+}

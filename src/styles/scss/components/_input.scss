@@ -1,0 +1,11 @@
+input.form-control {
+    box-shadow: none;
+    border-radius: 0;
+    &:focus,
+    &:hover {
+        border-color: lighten($grey, 18%);
+        box-shadow: none;
+        outline: none;
+        outline-offset: 0;
+    }
+}

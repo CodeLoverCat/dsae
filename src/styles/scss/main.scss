@@ -1,7 +1,9 @@
-@import 'helpers/fonts',
+@import 'base/reset',
+        'helpers/fonts',
         'helpers/variables',
         'helpers/helpers',
         'helpers/animation',
         'components/input',
+        'components/button',
         'layout/header',
         'layout/footer';
