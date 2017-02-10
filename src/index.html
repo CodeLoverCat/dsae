@@ -1,9 +1,63 @@
 //= template/head.html
 //= template/head-end.html
 
-<body class="">
+<body class="template--page--homepage">
     //= template/header.html
-    <div style="height:2500px;"></div>
+    <div>
+        <ul class="lightSlider">
+            <li>
+                <img src="images/banners/banner3.jpg" alt="img"/>
+            </li>
+            <li>
+                <img src="images/banners/banner1.jpg" alt="img"/>
+            </li>
+            <li>
+                <img src="images/banners/banner4.jpg" alt="img"/>
+            </li>
+            <li>
+                <img src="images/banners/banner2.jpg" alt="img"/>
+            </li>
+            <li>
+                <img src="images/banners/banner5.jpg" alt="img"/>
+            </li>
+        </ul>
+        <div class="container">
+            <div class="widget-heading text-center">
+                <h2 class="text-center">New Products
+                    <span>Our bestsellers this week</span>
+                </h2>
+            </div>
+            //= template/product-grid.html
+            <div class="row banner-above-ht">
+                <div class="col-md-6 banner-above-htl">
+                    <a href="/collection"> <img src="//cdn.shopify.com/s/files/1/0812/7515/t/2/assets/banner_1_image.png?12896799671978402823" alt=""> </a>
+                </div>
+                <div class="col-md-6 banner-above-htr">
+                    <div class="row banner-above-htrb" style="padding-bottom: 16px;">
+                        <div class="col-md-6">
+                            <a href="/collection"> <img src="//cdn.shopify.com/s/files/1/0812/7515/t/2/assets/banner_2_image.png?12896799671978402823" alt=""> </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="/collection"> <img src="//cdn.shopify.com/s/files/1/0812/7515/t/2/assets/banner_3_image.png?12896799671978402823" alt=""> </a>
+                        </div>
+                    </div>
+                    <div class="row banner-above-htrt">
+                        <div class="col-md-12">
+                            <a href="/collection"> <img src="//cdn.shopify.com/s/files/1/0812/7515/t/2/assets/banner_4_image.png?12896799671978402823" alt=""> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     //= template/footer.html
+    //= template/product-quick-view-model.html
+    
     <script type="text/javascript" src="js/prototype.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            loadjQuerySlider();
+		});
+    </script>
+    
 </body>

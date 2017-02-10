@@ -1,0 +1,6 @@
+@mixin cardBoxLayout {
+    border-radius: 4px;
+    background-color: #FFF;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.06);
+    border: 1px solid $lightgrey;
+}

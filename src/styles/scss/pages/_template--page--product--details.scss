@@ -1,0 +1,37 @@
+.template--page--product--details {
+    .review-comment {
+        .comment_container {
+            .avatar {
+                @include cardBoxLayout;
+                margin-right: 16px;
+            }
+            .review-rating-comment {
+                width: calc(100% - 80px);
+                display: inline-block;
+                .comment-text {
+                    p {margin-bottom: 0}
+                    .meta {
+                        font-size: 15px;
+                        color: $darkgrey;
+                        margin-bottom: 5px;
+                    }
+                    .product-rating {
+                        display: inline-block;
+                        width: 100%;
+                        margin-bottom: 10px;
+                        li {
+                            float: left;
+                            margin-right: 3px;
+                            color: $theme-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .submit-review-form {
+        background-image: linear-gradient(to bottom,#ddd,#fff) !important;
+        margin: 25px -25px 0;
+        padding: 25px 25px 0;
+    }
+}

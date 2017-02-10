@@ -1,0 +1,10 @@
+@import 'helpers/variables';
+    
+body {
+    font: $font-default;
+    color: $darkgrey;
+}
+
+.text-gray {
+    color: $grey;
+}

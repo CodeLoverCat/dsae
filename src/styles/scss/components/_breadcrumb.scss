@@ -1,0 +1,33 @@
+.breadcrumb-master {
+    display: inline-block;
+    width: 100%;
+    ul {
+        li {
+            float: left;
+            padding: 20px 15px;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 20px;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                background: $grey;
+            }
+            &:first-child {
+                padding-left: 0;
+            }
+            &:last-child {
+                &::after {
+                    visibility: hidden;
+                }
+            }
+            a {
+                font-size: 15px;
+                color: $darkgrey;
+            }
+        }
+    }
+}

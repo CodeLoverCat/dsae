@@ -1,0 +1,96 @@
+.fixed-up {
+    .mega-menu-container {
+        background: rgba(0,0,0,0.75);
+    }
+}
+.mega-menu-container {
+    background: $darkgrey;
+    position: relative;
+    z-index: 8;
+    .mega-menu-inner {
+        .lvl-1 {
+            position: static;
+            >a {
+                display: block;
+                color: $white;
+                letter-spacing: 1px;
+                font-size: 15px;
+                padding: 11px 15px;
+                &:hover,
+                &:focus {
+                    background: $extralightgrey;
+                    color: $darkgrey;
+                }
+                &.blinking-text {
+                    animation: color-change 1s infinite;
+                    &:hover {
+                        background: transparent;
+                    }
+                }
+            }
+            .mega-menu-wrap {
+                background: $white;
+                position: absolute;
+                width: 100%;
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(10px);
+                transition: 0.05s;
+                top: 100%;
+                left: 0;
+                border-bottom: 1px solid #e6e6e6;
+                .mega-menu {
+                    max-width: 1170px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    .matchHeightItem {
+                        padding: 25px 15px;
+                        border-right: 1px solid $lightgrey;
+                        &:last-child {
+                            border-right: 0 none;
+                        }
+                        .title {
+                            font-family: $font-condensed;
+                            font-size: 18px;
+                            color: $darkgrey;
+                        }
+                        ul {
+                            margin-top: 10px;
+                            >li {
+                                a {
+                                    color: $grey;
+                                    width: 100%;
+                                    display: inline-block;
+                                    &:hover {
+                                        color: $darkgrey;
+                                    }
+                                }
+                            }
+                        }
+                        .featured-area {
+                            margin-top: 10px;
+                            .fear-image {
+                                display: block;
+                                margin-bottom: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+            &:hover {
+                >a {
+                    background-image: linear-gradient(to bottom, $extralightgrey, $white);
+                    color: $darkgrey;
+                }
+                .mega-menu-wrap {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateY(0);
+                    transition: 0.25s 0.1s;
+                }
+            }
+        }
+    }
+}

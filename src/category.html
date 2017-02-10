@@ -1,0 +1,76 @@
+//= template/head.html
+//= template/head-end.html
+
+<body class="template--page--category">
+    //= template/header.html
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                //= template/breadcrumb.html
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card-box-layout">
+                    <div class="row category-header">
+                        <div class="col-md-8">
+                            <h1>Woman Collection</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed nibh blandit, egestas eros in, vehicula urna. Suspendisse non nisi odio. In sed volutpat augue, sed laoreet mauris. Mauris gravida ornare tortor a posuere. Pellentesque velit sem, interdum sed bibendum eget, aliquam vel turpis. Mauris fermentum, arcu id pulvinar pharetra, ipsum lorem eleifend turpis, a interdum odio magna in ex. </p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="http://cdn.shopify.com/s/files/1/0812/7515/t/2/assets/banner_4_image.png?12896799671978402823" class="card-box-layout" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="separator"/>
+        <div class="row">
+            <div class="col-md-3">
+                //= template/left-sidebar.html
+            </div>
+            <div class="col-md-9">
+                <div class="product-filter">
+                    <span class="count-info">3944 items found</span>
+                    <div class="pull-right">
+                        <div class="change-view pull-left">
+                            <a href="#" title="Grid" class="grid-view"><i class="ti-layout-grid3"></i></a>
+                            <a href="#" title="List" class="list-view "><i class="ti-layout-list-thumb-alt"></i></a>
+                        </div>
+                        <div class="sort-by-filter pull-left">
+                            <select class="form-control fancy-dropdown" name="orderby">
+                                <option selected="selected">Default sorting</option>
+                                <option value="popularity">Sort by popularity</option>
+                                <option value="rating">Sort by average rating</option>
+                                <option value="date">Sort by newness</option>
+                                <option value="price">Sort by price: low to high</option>
+                                <option value="price-desc">Sort by price: high to low</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                //= template/product-grid.html
+            </div>
+        </div>
+    </div>
+    
+    //= template/footer.html
+    
+    <script type="text/javascript" src="js/prototype.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".cd-item").removeClass("col-md-3").addClass("col-md-4");
+            $(function () {
+                $("#range").ionRangeSlider({
+                    keyboard: true,
+                    min: 99,
+                    max: 9999,
+                    type: 'double',
+                    step: 1,
+                    prefix: "₹ ",
+                });
+            });
+		});
+    </script>
+</body>

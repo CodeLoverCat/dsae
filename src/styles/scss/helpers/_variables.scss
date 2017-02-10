@@ -6,9 +6,22 @@ $darkgrey: #1A1A1A;
 $grey: #808080;
 $extralightgrey: #F2F2F2;
 $lightgrey: #dcdcdc;
-$border-color : #e6e6e6;
+$default-border: #ccc;
+$border-color: #e6e6e6;
+$dark-border: #aaaaaa;
 
+// Bootstrap color changed
+$warning: #fbbc05;
+$success: #34a853;
+$info: #4285f4;
+$danger: $theme-color;
 
+// Fonts
 $font-default: 14px "Roboto", Roboto, Arial, sans-serif;
 $font-condensed: 'Roboto Condensed', Arial, sans-serif;
 
+// Media sizes
+$phone-only: "only screen and (min-width: 320px) and (max-width: 767px)";
+$phone-and-tablet: "only screen and (min-width: 320px) and (max-width: 991px)";
+$tablet-only: "only screen and (min-width: 768px) and (max-width: 991px)";
+$desktop-only: "only screen and (min-width: 768px)";

@@ -89,6 +89,11 @@ gulp.task('pre-js', ['js'], function () {
         'bower_components/bootstrap/dist/js/bootstrap.min.js',
         'bower_components/typeahead.js/dist/typeahead.jquery.min.js',
         'bower_components/matchHeight/dist/jquery.matchHeight-min.js',
+        'bower_components/lightslider/dist/js/lightslider.min.js',
+        'bower_components/jquery-touchswipe/jquery.touchSwipe.min.js',
+        'bower_components/ion.rangeSlider/js/ion.rangeSlider.min.js',
+        'bower_components/fotorama/fotorama.js',
+        'bower_components/chosen/chosen.jquery.js',
         'build/js/app.js'
     ];
 
@@ -120,6 +125,11 @@ gulp.task('sass', function () {
 gulp.task('css', ['sass'], function () {
     var styles = [
         'bower_components/bootstrap/dist/css/bootstrap.min.css',
+        'bower_components/lightslider/dist/css/lightslider.min.css',
+        'bower_components/ion.rangeSlider/css/ion.rangeSlider.css',
+        'bower_components/ion.rangeSlider/css/ion.rangeSlider.skinFlat.css',
+        'bower_components/chosen/chosen.css',
+        'bower_components/fotorama/fotorama.css',
         'src/styles/lib/font-awesome/font-awesome.min.css',
         'src/styles/lib/themify-icons/themify-icons.css',
         'build/css/main.css'

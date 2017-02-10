@@ -1,9 +1,15 @@
-input.form-control {
+label {
+    margin-bottom: 5px;
+}
+input.form-control,
+input[type=checkbox],
+textarea.form-control {
     box-shadow: none;
     border-radius: 0;
+    border-color: $default-border;
     &:focus,
     &:hover {
-        border-color: lighten($grey, 18%);
+        border-color: $default-border;
         box-shadow: none;
         outline: none;
         outline-offset: 0;

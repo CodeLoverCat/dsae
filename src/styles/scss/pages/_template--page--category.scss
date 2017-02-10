@@ -1,0 +1,15 @@
+.template--page--category {
+    .category-header {
+        padding: 25px;
+        h1 {
+            font-family: $font-condensed;
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+        p {
+            color: $grey;
+            letter-spacing: 0.5px;
+            line-height: 20px;
+        }
+    }
+}

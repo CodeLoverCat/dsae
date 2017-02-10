@@ -1,0 +1,167 @@
+/********************************************
+Product Quantity Box : Spinner/Number Input
+********************************************/
+.spinner {
+    input {
+      text-align: center;
+    }
+    .input-group-btn-vertical {
+        position: relative;
+        white-space: nowrap;
+        width: 15px;
+        vertical-align: middle;
+        display: table-cell;
+        > .btn {
+            display: block;
+            float: none;
+            width: 100%;
+            max-width: 100%;
+            padding: 8px;
+            margin-left: -1px;
+            position: relative;
+            border-radius: 0;
+            &:last-child {
+                margin-top: -2px;
+            }
+            i {
+              position: absolute;
+              top: 0;
+              left: 4px;
+            }
+        }
+    }
+}
+
+/********************************************
+Fancy Dropdown design : Convert Select tag into Fancy Dropdown
+********************************************/
+.chosen-container-single {
+    &.chosen-container-active {
+        .chosen-single,
+        .chosen-choices {
+            border-color: $default-border;
+            box-shadow: none;
+        }
+    }
+    .chosen-single {
+        background: $white;
+        height: 34px;
+        border-radius: 0;
+        line-height: 34px;
+        //box-shadow: 0 2px 2px 0 rgba(0,0,0,.06);
+        box-shadow: none;
+        font-size: 14px;
+        border-color: $default-border;
+        div b {
+            background: transparent;
+            &::after {
+                font-family: FontAwesome;
+                content: "\f0d7";
+                font: normal normal normal 14px/1 FontAwesome;
+                color: #000;
+            }
+        }
+    }
+    .chosen-drop {
+        border-color: $default-border;
+        .chosen-results {
+            li.highlighted {
+                background-color: $theme-color;
+                background-image: #ea4335; /* Old browsers */
+                background-image: -moz-linear-gradient(top,  #ea4335 0%, #bf2b2b 100%); /* FF3.6-15 */
+                background-image: -webkit-linear-gradient(top,  #ea4335 0%,#bf2b2b 100%); /* Chrome10-25,Safari5.1-6 */
+                background-image: linear-gradient(to bottom,  #ea4335 0%,#bf2b2b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea4335', endColorstr='#bf2b2b',GradientType=0 ); /* IE6-9 */
+
+            }
+        }
+    }
+}
+
+/********************************************
+Fotorama -- Product View Image Gallery : Slider with Thumbnails
+********************************************/
+.fotorama__stage {
+    @include cardBoxLayout;
+    .fotorama__arr, .fotorama__fullscreen-icon, .fotorama__video-close, .fotorama__video-play {
+        background: transparent;
+    }
+    .fotorama__arr {
+        opacity: 1;
+        color: $darkgrey;
+        position: absolute;
+        z-index: 8;
+        top: 50%;
+        transform: translateY(-52%);
+        background-color: $white;
+        height: 75px;
+        width: 40px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 24px;
+        box-shadow: 1px 2px 10px -1px rgba(0,0,0,.3);
+        text-shadow: 1px 0px 1px rgba(0,0,0,.3);
+        font-family: 'themify';
+        &::after {
+            display: inline-block;
+        }
+    }
+    .fotorama__arr--prev {
+        left: 0;
+        border-radius: 0 4px 4px 0;
+        &::after {
+            content: "\e64a";
+        }
+    }
+    .fotorama__arr--next {
+        right: 0;
+        border-radius: 4px 0 0 4px;
+        &::after {
+            content: "\e649";
+        }
+    }
+}
+.fotorama__nav-wrap {
+    .fotorama__thumb-border {
+        border-color: $theme-color;
+    }
+    .fotorama__nav__frame--thumb {
+        .fotorama__thumb {
+            @include cardBoxLayout;   
+        }
+    }
+}
+
+/********************************************
+Pricing Filter : Price Range Slider
+********************************************/
+.irs {
+    .irs-bar,
+    .irs-line-left,
+    .irs-line-mid,
+    .irs-line-right {
+        height: 2px;
+        background: $grey;
+    }
+    .irs-bar {
+        background: $darkgrey;
+    }
+    .irs-from,
+    .irs-single,
+    .irs-to {
+        background: $theme-color;
+        top: -8px;
+        font-size: 12px;
+        padding: 3px 5px 1px;
+    }
+    .irs-slider {
+        top: 17px;
+        border-radius: 25px;
+        width: 18px;
+        background: $white;
+        box-shadow: 0 1px 1px 1px rgba(0,0,0,.2);
+    }
+    .irs-bar-edge {
+        background: red;
+    }
+}
