@@ -1,0 +1,157 @@
+//= template/head.html
+
+<body class="template--page--homepage">
+    //= template/header.html
+    <div>
+        <ul class="lightSlider">
+            <li>
+                <img src="images/banners/banner3.jpg" alt="img"/>
+            </li>
+            <li>
+                <img src="images/banners/banner1.jpg" alt="img"/>
+            </li>
+            <li>
+                <img src="images/banners/banner4.jpg" alt="img"/>
+            </li>
+            <li>
+                <img src="images/banners/banner2.jpg" alt="img"/>
+            </li>
+            <li>
+                <img src="images/banners/banner5.jpg" alt="img"/>
+            </li>
+        </ul>
+        <div class="container">
+            <div class="widget-heading text-center">
+                <h2 class="text-center">New Products
+                    <span>Our bestsellers this week</span>
+                </h2>
+            </div>
+            //= template/product-grid.html
+            <div class="row banner-above-ht">
+                <div class="col-md-6 banner-above-htl">
+                    <a href="/collection"> <img src="//cdn.shopify.com/s/files/1/0812/7515/t/2/assets/banner_1_image.png?12896799671978402823" alt=""> </a>
+                </div>
+                <div class="col-md-6 banner-above-htr">
+                    <div class="row banner-above-htrb" style="padding-bottom: 16px;">
+                        <div class="col-md-6">
+                            <a href="/collection"> <img src="//cdn.shopify.com/s/files/1/0812/7515/t/2/assets/banner_2_image.png?12896799671978402823" alt=""> </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="/collection"> <img src="//cdn.shopify.com/s/files/1/0812/7515/t/2/assets/banner_3_image.png?12896799671978402823" alt=""> </a>
+                        </div>
+                    </div>
+                    <div class="row banner-above-htrt">
+                        <div class="col-md-12">
+                            <a href="/collection"> <img src="//cdn.shopify.com/s/files/1/0812/7515/t/2/assets/banner_4_image.png?12896799671978402823" alt=""> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    //= template/footer.html
+    //= template/product-quick-view-model.html
+    <div id="productQuickView" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content"><a href="#" data-dismiss="modal" class="close-modal"><i class="ti-close"></i></a>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="product-img-box">
+                        <div class="fotorama">
+                            <img src="images/product/1.jpg" alt="img" />
+                            <img src="images/product/2.jpg" alt="img" />
+                            <img src="images/product/3.jpg" alt="img" />
+                            <img src="images/product/4.jpg" alt="img" />
+                            <img src="images/product/5.jpg" alt="img" />
+                            <img src="images/product/6.jpg" alt="img" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="product-details-sidebar">
+                        <div class="product-brand-name">
+                            <span></span>
+                        </div>
+                        <div class="product-name-sku-rating">
+                            <h1 class="product-name">EVAH Olive Embroidered Dungarees</h1>
+                            <span class="product-sku">Product Sku: <span>5110336</span></span>
+                            <ul class="product-rating">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star-half-o"></i></li>
+                                <li><i class="fa fa-star-o"></i></li>
+                            </ul>
+                        </div>
+                        <div class="price-info-box">
+                            <div class="pricing-section text-center">
+                                <p class="old-price old-price-lable">
+                                    <span class="price line-through">₹ 1799.00</span>
+                                </p>
+                                <p class="special-price special-price-lable">
+                                    <span class="price">₹ 1500.00</span>
+                                    <span class="view-vat-info">incl. VAT.</span>
+                                </p>        
+                            </div>
+                            <div class="shipping">
+                                <span class="shipping-price">₹ 99.00 </span>
+                                <span class="shipping-text">Shipping Cost</span>
+                            </div>  
+                        </div>
+                        <div class="product-short-description">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius facilisis eros. Sed erat. In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa. Integer ut purus ac augue commodo commodo. Nunc nec mi eu justo tempor consectetuer. Etiam vitae nisl. In dignissim lacus ut ante. Cras elit lectus, bibendum a, adipiscing vitae, commodo et, dui.</p>
+                        </div>
+                        <form class="product-action-tools" action="#">
+                            <div class="form-group input-group spinner">
+                                <label>Quantity:</label>
+                                <div class="input-spinner">
+                                    <input type="text" class="form-control" value="1" min="0" max="15">
+                                    <div class="input-group-btn-vertical">
+                                        <button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+                                        <button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Colours:</label>
+                                <ul class="product-color-selector">
+                                    <li class="red"></li>
+                                    <li class="blue"></li>
+                                    <li class="yellow"></li>
+                                    <li class="green"></li>
+                                </ul>
+                            </div>
+                            <div class="form-group">
+                                <label>Size:</label>
+                                <ul class="product-size-selector">
+                                    <li>S</li>
+                                    <li>M</li>
+                                    <li>L</li>
+                                    <li>XL</li>
+                                    <li>XXL</li>
+                                </ul>
+                            </div>
+                            <div class="button-group">
+                                <button type="submit" class="btn btn-master"><i class="ti-shopping-cart"></i> <span>Add to cart</span></button>
+                                <a class="btn btn-secondry" title="Add to Wishlist"><i class="fa fa-heart-o"></i></a>
+                                <a class="btn btn-secondry" title="Add to Compare"><i class="fa fa-random"></i></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script type="text/javascript" src="js/prototype.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            loadjQuerySlider();
+            $(".lightSlider").lightSlider({
+                item:1,
+                slideMargin:0,
+            });
+		});
+    </script>
+    
+</body>

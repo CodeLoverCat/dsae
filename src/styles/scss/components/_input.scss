@@ -6,10 +6,10 @@ input[type=checkbox],
 textarea.form-control {
     box-shadow: none;
     border-radius: 0;
-    border-color: $default-border;
+    border-color: $Silver;
     &:focus,
     &:hover {
-        border-color: $default-border;
+        border-color: $Silver;
         box-shadow: none;
         outline: none;
         outline-offset: 0;

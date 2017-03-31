@@ -1,0 +1,21 @@
+.feature--collection--list {
+    margin-top: 25px;
+    .collection-info {
+        .title {
+            font-family: $font-condensed;
+            color: $primary-color;
+            font-size: 22px;
+            margin: 20px 0 5px;
+            display: inline-block;
+        }
+        .count-products {
+            font-size: 12px;
+            color: lighten($Grey, 20%);
+            margin-bottom: 20px;
+        }
+        .desc {
+            color: $Grey;
+            margin-bottom: 25px;
+        }
+    }
+}

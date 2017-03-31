@@ -1,6 +1,66 @@
+@mixin font-size($size) {
+    font-size:$size + px;
+}
+
+@mixin font-face($font-name, $file-name, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: quote($font-name);
+    src: url($file-name + '.eot');
+    src: url($file-name + '.eot?#iefix')  format('embedded-opentype'),
+         url($file-name + '.woff2') format('woff2'),
+         url($file-name + '.woff') format('woff'),
+         url($file-name + '.ttf')  format('truetype'),
+         url($file-name + '.svg##{$font-name}')  format('svg');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin box-shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    -ms-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+@mixin linear-gradient($gradient) {
+    background: -webkit-linear-gradient($gradient); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient($gradient); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient($gradient); /* For Firefox 3.6 to 15 */
+    background: linear-gradient($gradient); /* Standard syntax */
+}
+
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+
+@mixin transform($transform) {
+    -ms-transform: $transform; /* IE 9 */
+    -webkit-transform: $transform; /* Chrome, Safari, Opera */
+    transform: $transform;
+}
+
+
+
 @mixin cardBoxLayout {
-    border-radius: 4px;
-    background-color: #FFF;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,.06);
-    border: 1px solid $lightgrey;
+    @include border-radius(4px);
+    background-color: $white;
+    @include box-shadow (0 2px 2px 0 rgba(0,0,0,.06));
+    border: 1px solid $LightGrey;
+}
+
+@mixin fullWidthFix {
+    display: inline-block;
+    width: 100%;
 }

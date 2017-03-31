@@ -1,0 +1,48 @@
+.shop--by--popular {
+    background: #FFAFBD; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #03A9F4 , #E91E63); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #03A9F4 , #E91E63); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    .card-box-layout {
+        @include fullWidthFix;
+    }
+    .one-half {
+        width: 50%;
+        float: left;
+        display: inline-block;
+        .popular-categorie {
+            .split-nav-list {
+                .split-nav-heading {
+                    @include fullWidthFix;
+                    padding: 20px 25px 35px 25px;
+                    .split-nav-listHeading,
+                    .split-nav-listSubHeading {
+                        font-family: $font-condensed;
+                        display: inline;
+                    }
+                    .split-nav-listHeading {
+                        font-size: 30px;
+                    }
+                    .split-nav-listSubHeading {
+                        font-size: 20px;
+                    }
+                }
+                .listing {
+                    @include fullWidthFix;
+                    padding: 0px 25px;
+                    li {
+                        padding: 0;
+                        a.shop-by-link {
+                            @include fullWidthFix;
+                            padding: 15px 0;
+                            border-bottom: 1px solid $Silver;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    img {
+        width: 100%;
+        //border-right: 1px solid $LightGrey;
+    }
+}

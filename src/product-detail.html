@@ -1,5 +1,4 @@
 //= template/head.html
-//= template/head-end.html
 
 <body class="template--page--product--details">
     //= template/header.html
@@ -276,11 +275,23 @@
     
     <script type="text/javascript" src="js/prototype.js"></script>
     <script type="text/javascript">
+        function loadFotoramaCustom() {
+            if ($(window).width() < 768) {
+               var height = 'auto'
+            } else {
+               var height = '600'
+            }
+            $('.fotorama').fotorama({
+                height: height,
+            });
+        }
         $(window).resize(function () {
-          loadFotorama();
+            loadFotorama();
+            loadFotoramanew();
         });
         $(document).ready(function() {
             loadFotorama();
+            loadFotoramanew();
             $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
                 $(".chosen-container").css('width', '100%');
             });

@@ -1,10 +1,9 @@
-@import 'helpers/variables';
-    
 body {
-    font: $font-default;
-    color: $darkgrey;
+    font-family: $font-default;
+    color: $JetGrey;
+    @include font-size(14);
 }
 
 .text-gray {
-    color: $grey;
+    color: $Grey;
 }

@@ -1,0 +1,79 @@
+.footer-section {
+    background: $white;
+    padding-top: 25px;
+    margin-top: 25px;
+    border-top: 1px solid $LightGrey;
+    .widget {
+        margin-bottom: 20px;
+        display: inline-block;
+        width: 100%;
+        .title {
+            display: inline-block;
+            font-size: 18px;
+            letter-spacing: 0.5px;
+            margin-bottom: 10px;
+        }
+        .desc {
+            font-size: 13px;
+            color: $Grey;
+            margin-bottom: 10px;
+        }
+        .cs-boxes {
+            .box {
+                float: left;
+                margin-right: 20px;
+                .cs-btn {
+                    height: 50px;
+                    width: 50px;
+                    background: #ccc;
+                    display: block;
+                    text-align: center;
+                    line-height: 50px;
+                    font-size: 30px;
+                    border-radius: 4px;
+                    box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3);
+                    text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+                    color: $DarkGrey;
+                }
+                span {
+                    font-size: 82%;
+                }
+            }
+        }
+        .nls-box {
+            padding: 20px;
+            .btn {
+                background: $ExtraLightGrey;
+                min-width: 100px;
+            }
+        }
+        .footer-social-btn {
+            height: 40px;
+            width: 40px;
+            color: $DarkGrey;
+            display: inline-block;
+            line-height: 40px;
+            border: 1px solid $DarkGrey;
+            font-size: 18px;
+            border-radius: 30px;
+            margin: 0 5px;
+            &:hover {
+                background: $DarkGrey;
+                color: $white;
+            }
+        }
+        .pa-card {
+            img {
+                width:50px;
+                margin: 0 5px;
+            }
+        }
+    }
+    .copyright {
+        background: $DarkGrey;
+        color: $LightGrey;
+        font-size: 12px;
+        padding: 10px;
+        margin: 10px 0 0;
+    }
+}

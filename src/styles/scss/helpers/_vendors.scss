@@ -39,7 +39,7 @@ Fancy Dropdown design : Convert Select tag into Fancy Dropdown
     &.chosen-container-active {
         .chosen-single,
         .chosen-choices {
-            border-color: $default-border;
+            border-color: $Silver;
             box-shadow: none;
         }
     }
@@ -51,7 +51,7 @@ Fancy Dropdown design : Convert Select tag into Fancy Dropdown
         //box-shadow: 0 2px 2px 0 rgba(0,0,0,.06);
         box-shadow: none;
         font-size: 14px;
-        border-color: $default-border;
+        border-color: $Silver;
         div b {
             background: transparent;
             &::after {
@@ -63,10 +63,10 @@ Fancy Dropdown design : Convert Select tag into Fancy Dropdown
         }
     }
     .chosen-drop {
-        border-color: $default-border;
+        border-color: $Silver;
         .chosen-results {
             li.highlighted {
-                background-color: $theme-color;
+                background-color: $primary-color;
                 background-image: #ea4335; /* Old browsers */
                 background-image: -moz-linear-gradient(top,  #ea4335 0%, #bf2b2b 100%); /* FF3.6-15 */
                 background-image: -webkit-linear-gradient(top,  #ea4335 0%,#bf2b2b 100%); /* Chrome10-25,Safari5.1-6 */
@@ -88,7 +88,7 @@ Fotorama -- Product View Image Gallery : Slider with Thumbnails
     }
     .fotorama__arr {
         opacity: 1;
-        color: $darkgrey;
+        color: $DarkGrey;
         position: absolute;
         z-index: 8;
         top: 50%;
@@ -123,7 +123,7 @@ Fotorama -- Product View Image Gallery : Slider with Thumbnails
 }
 .fotorama__nav-wrap {
     .fotorama__thumb-border {
-        border-color: $theme-color;
+        border-color: $primary-color;
     }
     .fotorama__nav__frame--thumb {
         .fotorama__thumb {
@@ -141,15 +141,15 @@ Pricing Filter : Price Range Slider
     .irs-line-mid,
     .irs-line-right {
         height: 2px;
-        background: $grey;
+        background: $Grey;
     }
     .irs-bar {
-        background: $darkgrey;
+        background: $DarkGrey;
     }
     .irs-from,
     .irs-single,
     .irs-to {
-        background: $theme-color;
+        background: $primary-color;
         top: -8px;
         font-size: 12px;
         padding: 3px 5px 1px;

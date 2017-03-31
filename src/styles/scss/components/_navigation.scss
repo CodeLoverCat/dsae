@@ -4,7 +4,7 @@
     }
 }
 .mega-menu-container {
-    background: $darkgrey;
+    background: $DarkGrey;
     position: relative;
     z-index: 8;
     .mega-menu-inner {
@@ -18,8 +18,8 @@
                 padding: 11px 15px;
                 &:hover,
                 &:focus {
-                    background: $extralightgrey;
-                    color: $darkgrey;
+                    background: $ExtraLightGrey;
+                    color: $DarkGrey;
                 }
                 &.blinking-text {
                     animation: color-change 1s infinite;
@@ -29,12 +29,12 @@
                 }
             }
             .mega-menu-wrap {
+                @include transform(translateY(10px));
                 background: $white;
                 position: absolute;
                 width: 100%;
                 opacity: 0;
                 visibility: hidden;
-                transform: translateY(10px);
                 transition: 0.05s;
                 top: 100%;
                 left: 0;
@@ -47,24 +47,24 @@
                     padding-right: 15px;
                     .matchHeightItem {
                         padding: 25px 15px;
-                        border-right: 1px solid $lightgrey;
+                        border-right: 1px solid $LightGrey;
                         &:last-child {
                             border-right: 0 none;
                         }
                         .title {
                             font-family: $font-condensed;
                             font-size: 18px;
-                            color: $darkgrey;
+                            color: $DarkGrey;
                         }
                         ul {
                             margin-top: 10px;
                             >li {
                                 a {
-                                    color: $grey;
+                                    color: $Grey;
                                     width: 100%;
                                     display: inline-block;
                                     &:hover {
-                                        color: $darkgrey;
+                                        color: $DarkGrey;
                                     }
                                 }
                             }
@@ -81,8 +81,8 @@
             }
             &:hover {
                 >a {
-                    background-image: linear-gradient(to bottom, $extralightgrey, $white);
-                    color: $darkgrey;
+                    background-image: linear-gradient(to bottom, $ExtraLightGrey, $white);
+                    color: $DarkGrey;
                 }
                 .mega-menu-wrap {
                     opacity: 1;

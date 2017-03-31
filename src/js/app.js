@@ -42,7 +42,7 @@ $(document).ready(function () {
     var lastScrollTop = 0;
     var delta = 5;
     var headerHeight = $('header').outerHeight();
-    var topNavHeight = $('.top-bar').outerHeight();
+    var topNavHeight = $('.header-top-area').outerHeight();
     var headerMainHeight = $('.header-main-area').outerHeight();
     $(window).scroll(function(event){
         didScroll = true;
@@ -102,22 +102,6 @@ $(document).ready(function () {
 });
 
 /********************************************
-LightSlider --  Simple Default Sliding Slider 
-********************************************/
-function loadjQuerySlider() {
-    $(".lightSlider").lightSlider({
-        loop:true,
-        item:1,
-        slideMargin:0,
-        keyPress:true,
-        dots: false,
-        pager: false,
-        prevHtml: "<i class='ti-angle-left'></i>",
-        nextHtml: "<i class='ti-angle-right'></i>"        
-    });
-};
-
-/********************************************
 Fotorama -- Product View Image Gallery : Slider with Thumbnails
 ********************************************/
 function loadFotorama() {
@@ -130,9 +114,8 @@ function loadFotorama() {
     }
     $('.fotorama').fotorama({
         minwidth: '100%',
-        height: '600',
-        thumbwidth: '100',
-        thumbheight: '100',
+        thumbwidth: '80',
+        thumbheight: '80',
         fit: 'contain',
         thumbfit: 'contain',
         click: false,

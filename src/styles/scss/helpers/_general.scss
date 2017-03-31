@@ -1,5 +1,5 @@
 body {
-    background: $extralightgrey;
+    background: $ExtraLightGrey;
 }
 
 img {
@@ -16,9 +16,9 @@ ul.listing {
     li {
         padding: 0 0 10px;
         a {
-            color: $grey;
+            color: $Grey;
             &:hover {
-                color: $darkgrey;
+                color: $DarkGrey;
             }
         }
     }
